@@ -12,8 +12,8 @@ import random
 
 # open files
 # words_with_sylabes_file = open('words_with_sylabes.txt', 'r', encoding='utf-8') # "word":"sylabe-sylabe-sylabe"
-words_with_sylabes_file = open('human_made_w_n_s.txt', 'r', encoding='utf-8') # "word":"sylabe-sylabe-sylabe"
-training_set_file = open('training_set_human.txt', 'w', encoding='utf-8')     # "sentence":[list of one_hot_enc(sylabe)]
+words_with_sylabes_file = open('expert_set.txt', 'r', encoding='utf-8') # "word":"sylabe-sylabe-sylabe"
+training_set_file = open('training_set_expert.txt', 'w', encoding='utf-8')     # "sentence":[list of one_hot_enc(sylabe)]
 
 # load files
 words_with_sylabes = { line.strip().split()[0]:line.strip().split()[1:] for line in words_with_sylabes_file}
